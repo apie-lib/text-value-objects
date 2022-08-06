@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1659762723">
+  <project timestamp="1659762723">
+    <file name="/home/runner/work/text-value-objects/text-value-objects/src/DatabaseText.php">
+      <class name="Apie\TextValueObjects\DatabaseText" namespace="global">
+        <metrics complexity="4" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="2" elements="8" coveredelements="4"/>
+      </class>
+      <line num="16" type="method" name="getRegularExpression" visibility="public" complexity="1" crap="1" count="10"/>
+      <line num="18" type="stmt" count="10"/>
+      <line num="21" type="method" name="convert" visibility="protected" complexity="1" crap="1" count="10"/>
+      <line num="23" type="stmt" count="10"/>
+      <line num="26" type="method" name="createRandom" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="37" type="method" name="createSchema" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="40" type="stmt" count="0"/>
+      <metrics loc="47" ncloc="41" classes="1" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="2" elements="8" coveredelements="4"/>
+    </file>
+    <file name="/home/runner/work/text-value-objects/text-value-objects/src/EncryptedPassword.php">
+      <class name="Apie\TextValueObjects\EncryptedPassword" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="8" coveredelements="0"/>
+      </class>
+      <line num="15" type="method" name="fromUnencryptedPassword" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="21" type="method" name="verifyUnencryptedPassword" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="27" type="method" name="createRandom" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="29" type="stmt" count="0"/>
+      <metrics loc="32" ncloc="32" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="8" coveredelements="0"/>
+    </file>
+    <file name="/home/runner/work/text-value-objects/text-value-objects/src/FirstName.php">
+      <class name="Apie\TextValueObjects\FirstName" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="6" coveredelements="4"/>
+      </class>
+      <line num="14" type="method" name="getRegularExpression" visibility="public" complexity="1" crap="1" count="12"/>
+      <line num="16" type="stmt" count="12"/>
+      <line num="19" type="method" name="convert" visibility="protected" complexity="1" crap="1" count="12"/>
+      <line num="21" type="stmt" count="12"/>
+      <line num="24" type="method" name="createRandom" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <metrics loc="29" ncloc="29" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="6" coveredelements="4"/>
+    </file>
+    <file name="/home/runner/work/text-value-objects/text-value-objects/src/LastName.php">
+      <class name="Apie\TextValueObjects\LastName" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="6" coveredelements="4"/>
+      </class>
+      <line num="14" type="method" name="getRegularExpression" visibility="public" complexity="1" crap="1" count="14"/>
+      <line num="16" type="stmt" count="14"/>
+      <line num="19" type="method" name="convert" visibility="protected" complexity="1" crap="1" count="14"/>
+      <line num="21" type="stmt" count="14"/>
+      <line num="24" type="method" name="createRandom" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <metrics loc="29" ncloc="29" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="6" coveredelements="4"/>
+    </file>
+    <file name="/home/runner/work/text-value-objects/text-value-objects/src/NonEmptyString.php">
+      <class name="Apie\TextValueObjects\NonEmptyString" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="6" coveredelements="4"/>
+      </class>
+      <line num="14" type="method" name="getRegularExpression" visibility="public" complexity="1" crap="1" count="10"/>
+      <line num="16" type="stmt" count="10"/>
+      <line num="19" type="method" name="convert" visibility="protected" complexity="1" crap="1" count="10"/>
+      <line num="21" type="stmt" count="10"/>
+      <line num="24" type="method" name="createRandom" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <metrics loc="29" ncloc="29" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="6" coveredelements="4"/>
+    </file>
+    <file name="/home/runner/work/text-value-objects/text-value-objects/src/SmallDatabaseText.php">
+      <class name="Apie\TextValueObjects\SmallDatabaseText" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="6" coveredelements="4"/>
+      </class>
+      <line num="14" type="method" name="getRegularExpression" visibility="public" complexity="1" crap="1" count="10"/>
+      <line num="16" type="stmt" count="10"/>
+      <line num="19" type="method" name="convert" visibility="protected" complexity="1" crap="1" count="10"/>
+      <line num="21" type="stmt" count="10"/>
+      <line num="24" type="method" name="createRandom" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <metrics loc="29" ncloc="29" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="6" coveredelements="4"/>
+    </file>
+    <file name="/home/runner/work/text-value-objects/text-value-objects/src/StrongPassword.php">
+      <class name="Apie\TextValueObjects\StrongPassword" namespace="global">
+        <metrics complexity="9" methods="9" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="8" elements="19" coveredelements="16"/>
+      </class>
+      <line num="14" type="method" name="getMinLength" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="16" type="stmt" count="8"/>
+      <line num="19" type="method" name="getMaxLength" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="21" type="stmt" count="8"/>
+      <line num="24" type="method" name="getAllowedSpecialCharacters" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="26" type="stmt" count="8"/>
+      <line num="29" type="method" name="getMinSpecialCharacters" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="31" type="stmt" count="8"/>
+      <line num="34" type="method" name="getMinDigits" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="36" type="stmt" count="8"/>
+      <line num="39" type="method" name="getMinLowercase" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="41" type="stmt" count="8"/>
+      <line num="44" type="method" name="getMinUppercase" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="46" type="stmt" count="8"/>
+      <line num="49" type="method" name="convert" visibility="protected" complexity="1" crap="1" count="8"/>
+      <line num="51" type="stmt" count="8"/>
+      <line num="57" type="method" name="getOpenapiSchema" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="60" type="stmt" count="0"/>
+      <line num="62" type="stmt" count="0"/>
+      <metrics loc="66" ncloc="63" classes="1" methods="9" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="8" elements="19" coveredelements="16"/>
+    </file>
+    <metrics files="7" loc="261" ncloc="252" classes="7" methods="28" coveredmethods="18" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="18" elements="59" coveredelements="36"/>
+  </project>
+</coverage>
