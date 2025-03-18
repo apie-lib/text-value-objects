@@ -2,18 +2,22 @@
 namespace Apie\TextValueObjects;
 
 use Apie\Core\Attributes\FakeMethod;
+use Apie\Core\Attributes\ProvideIndex;
+use Apie\Core\ValueObjects\Concerns\IndexesWords;
 use Apie\Core\ValueObjects\Interfaces\HasRegexValueObjectInterface;
 use Apie\Core\ValueObjects\IsStringWithRegexValueObject;
 use Faker\Generator;
 
 #[FakeMethod('createRandom')]
-class NonEmptyString implements HasRegexValueObjectInterface
+#[ProvideIndex('getIndexes')]
+class CompanyName implements HasRegexValueObjectInterface
 {
+    use IndexesWords;
     use IsStringWithRegexValueObject;
 
     public static function getRegularExpression(): string
     {
-        return '/^.+$/';
+        return '/^\w[\w\-\s\'`"‘’“”‟,]*$/u';
     }
 
     protected function convert(string $input): string
@@ -23,6 +27,6 @@ class NonEmptyString implements HasRegexValueObjectInterface
 
     public static function createRandom(Generator $generator): self
     {
-        return new NonEmptyString($generator->realText(1024));
+        return new static($generator->company());
     }
 }

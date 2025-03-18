@@ -4,10 +4,10 @@ namespace Apie\Tests\TextValueObjects;
 use Apie\Core\ValueObjects\Exceptions\InvalidStringForValueObjectException;
 use Apie\Fixtures\TestHelpers\TestWithFaker;
 use Apie\Fixtures\TestHelpers\TestWithOpenapiSchema;
-use Apie\TextValueObjects\FirstName;
+use Apie\TextValueObjects\CompanyName;
 use PHPUnit\Framework\TestCase;
 
-class FirstNameTest extends TestCase
+class CompanyNameTest extends TestCase
 {
     use TestWithFaker;
     use TestWithOpenapiSchema;
@@ -16,7 +16,7 @@ class FirstNameTest extends TestCase
     #[\PHPUnit\Framework\Attributes\Test]
     public function fromNative_allows_many_names(string $expected, string $input)
     {
-        $testItem = FirstName::fromNative($input);
+        $testItem = CompanyName::fromNative($input);
         $this->assertEquals($expected, $testItem->toNative());
     }
 
@@ -24,14 +24,14 @@ class FirstNameTest extends TestCase
     #[\PHPUnit\Framework\Attributes\Test]
     public function it_allows_many_names(string $expected, string $input)
     {
-        $testItem = new FirstName($input);
+        $testItem = new CompanyName($input);
         $this->assertEquals($expected, $testItem->toNative());
     }
 
     public static function inputProvider()
     {
-        yield ['George', 'George'];
-        yield ['Albert', '   Albert   '];
+        yield ['42', '42'];
+        yield ['Team 17', '   Team 17   '];
         yield ['McDonalds', 'McDonalds'];
     }
 
@@ -40,7 +40,7 @@ class FirstNameTest extends TestCase
     public function it_refuses_empty_strings(string $input)
     {
         $this->expectException(InvalidStringForValueObjectException::class);
-        new FirstName($input);
+        new CompanyName($input);
     }
 
     #[\PHPUnit\Framework\Attributes\DataProvider('invalidProvider')]
@@ -48,7 +48,7 @@ class FirstNameTest extends TestCase
     public function it_refuses_empty_strings_with_fromNative(string $input)
     {
         $this->expectException(InvalidStringForValueObjectException::class);
-        FirstName::fromNative($input);
+        CompanyName::fromNative($input);
     }
 
     public static function invalidProvider()
@@ -62,11 +62,11 @@ class FirstNameTest extends TestCase
     public function it_works_with_schema_generator()
     {
         $this->runOpenapiSchemaTestForCreation(
-            FirstName::class,
-            'FirstName-post',
+            CompanyName::class,
+            'CompanyName-post',
             [
                 'type' => 'string',
-                'format' => 'firstname',
+                'format' => 'companyname',
                 'pattern' => true,
             ]
         );
@@ -75,6 +75,6 @@ class FirstNameTest extends TestCase
     #[\PHPUnit\Framework\Attributes\Test]
     public function it_works_with_apie_faker()
     {
-        $this->runFakerTest(FirstName::class);
+        $this->runFakerTest(CompanyName::class);
     }
 }
